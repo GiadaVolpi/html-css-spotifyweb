@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-viewport {
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+    position: relative;
+}
+
+/*.main-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    float: left;
+}
+
+#music {
+    width: 80%;
+    height: 2000px;
+    background-color: lightblue;
+    float: right;
+}
+*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+}
