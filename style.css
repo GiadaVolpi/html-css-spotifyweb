@@ -9,6 +9,7 @@ body {
     font-size: 15px;
     font-weight: 500;
 }
+
 .able {
     color: white;
 }
@@ -21,7 +22,12 @@ body {
     height: 100vh;
     width: 100vw;
     position: relative;
-    background-color: pink;
+}
+
+.main-container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .left-menu {
@@ -30,6 +36,7 @@ body {
     background-color: #050505;
     padding-top: 30px;
     position: relative;
+    float: left;
 }
 
 .left-menu a {
@@ -59,7 +66,7 @@ body {
 }
 
 .left-menu ul li:first-child {
-    border-left: 3px solid #1fef00;
+    border-left: 3px solid #f90c6f;
 }
 
 #logo img {
@@ -107,6 +114,31 @@ body {
 
 #music {
     width: 87%;
+    float: right;
+    height: 700px;
+    background-image: linear-gradient(to bottom right, #9e4268, black);
+}
+
+.music-menu ul {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.music-menu ul li {
+    margin-right: 30px;
+    list-style-type: none;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.music-menu ul li:hover {
+    color: white;
+}
+
+.music-menu ul li:first-child {
+    border-bottom: 3px solid #f90c6f;
 }
 
 footer {
