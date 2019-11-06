@@ -4,37 +4,169 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.able {
+    color: white;
+}
+
+.disable {
+    color: #adadad;
+}
+
 .container-viewport {
     height: 100vh;
     width: 100vw;
+    position: relative;
     background-color: pink;
+}
+
+.left-menu {
+    width: 13%;
+    height: 100vh;
+    background-color: #050505;
+    padding-top: 30px;
     position: relative;
 }
 
-/*.main-container:after {
-    content: "";
-    display: table;
-    clear: both;
+.left-menu a {
+    text-decoration: none;
 }
 
-aside {
-    width: 20%;
-    height: 100%;
-    background-color: yellow;
-    float: left;
+.left-menu a:hover {
+    color: white;
+}
+
+.left-menu a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.left-menu nav {
+    margin-top: 20px;
+}
+
+.left-menu ul li {
+    list-style-type: none;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.left-menu ul li:first-child {
+    border-left: 3px solid #1fef00;
+}
+
+#logo img {
+    width: 50%;
+    margin-left: 30px;
+}
+
+#logo img.img-logo-mobile {
+    display: none;
+}
+
+.left-menu-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 160px;
+    padding: 30px;
+    width: 100%;
+    font-weight: 300;
+    color: #adadad;
+}
+
+.left-menu-bottom i {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.left-menu-bottom p {
+    line-height: 50px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.left-menu-bottom p:hover {
+    color: white;
+}
+
+.left-menu-bottom p:last-child {
+    color: white;
+}
+
+.left-menu-bottom hr {
+    border: 0;
+    border-bottom: 1px solid #adadad;
 }
 
 #music {
-    width: 80%;
-    height: 2000px;
-    background-color: lightblue;
-    float: right;
+    width: 87%;
 }
-*/
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 150px;
     background-color: grey;
+}
+
+@media screen and (max-width: 1440px) {
+    .left-menu {
+        width: 20%;
+    }
+
+    #music {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .left-menu {
+        width: 30%;
+    }
+
+    #music {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-menu {
+        width: 20%;
+        padding: 0;
+    }
+
+    #logo img {
+        display: none;
+    }
+
+    #logo img.img-logo-mobile {
+        display: block;
+        padding-top: 20px;
+        margin: 0 auto;
+        height: 65px;
+        width: 45px;
+    }
+
+    .left-menu-top ul li span, .left-menu-bottom p span {
+        display: none;
+    }
+
+    .left-menu-top i.fas.fa-home, .left-menu-top i.fas.fa-search, .left-menu-top i.fas.fa-music, .left-menu-bottom i.fas.fa-arrow-circle-down, .left-menu-bottom i.far.fa-user {
+        display: block;
+        font-size: 20px;
+        margin: 25px auto;
+        font-size: 30px;
+    }
+
+    #music {
+        width: 80%;
+    }
 }
