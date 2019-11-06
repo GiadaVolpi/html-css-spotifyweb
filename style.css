@@ -115,7 +115,7 @@ body {
 #music {
     width: 87%;
     float: right;
-    height: 700px;
+    height: 100vh;
     background-image: linear-gradient(to bottom right, #9e4268, black);
 }
 
@@ -140,6 +140,94 @@ body {
 .music-menu ul li:first-child {
     border-bottom: 3px solid #f90c6f;
 }
+
+.hamburger-menu {
+    display: none;
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.music-content {
+    padding: 0 150px;
+}
+
+.music-content h2 {
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.music-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.img-hit {
+    position: relative;
+}
+
+.img-hit:hover {
+    cursor: pointer;
+}
+
+.img-hit img {
+    width: 200px;
+}
+
+.playlist {
+    margin-right: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.playlist a {
+    text-decoration: none;
+    color: white;
+}
+
+.playlist p {
+    margin-top: 10px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+}
+
+.overlay i:hover {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     position: fixed;
@@ -166,6 +254,14 @@ footer {
 
     #music {
         width: 70%;
+    }
+
+    .music-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
     }
 }
 
